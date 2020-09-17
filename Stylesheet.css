@@ -1,5 +1,38 @@
+.container {
+    display: grid;
+    width:50vw;
+    height:40vw;
+    grid-gap: 8px;
+    margin-bottom: 50px;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% 90%;
+}
+
+.item {
+    background-color: #111111;
+    border-radius: 7px;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+
+.item:hover {
+    background-color: #2980B9;
+}
+
+.nav {
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+
 .article {
-    border-round: 5px;
-    background-color: lightblue;
-    text-align: center;
+    grid-column: 2/-1;
+}
+
+.content {
+    grid-row: 1;
+}
+
+.title {
+    grid-row: 2/-1;
 }
