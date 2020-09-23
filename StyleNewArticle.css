@@ -5,7 +5,7 @@
     grid-gap: 8px;
     margin-bottom: 50px;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 10% 20% 70%;
+    grid-template-rows: 10% 20% 20% 50%;
 }
 
 .item {
@@ -21,12 +21,17 @@
 
 .nav {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .meta {
     grid-column: 1;
     grid-row: 2;
+}
+
+.mot_cle {
+    grid-column: 1;
+    grid-row: 3;
 }
 
 .article {
