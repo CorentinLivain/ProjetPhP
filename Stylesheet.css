@@ -5,28 +5,19 @@
     grid-gap: 8px;
     margin-bottom: 50px;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 10% 20% 70%;
+    grid-template-rows: 10% 20% auto;
 }
 
 .item {
-    background-color: #D9A45E;
+    border: 3px solid black;
     border-radius: 7px;
     font-size: 25px;
     padding: 10px;
 }
 
 .item:hover {
-    background-color: #D47B36;
-}
-
-.nav {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.meta {
-    grid-column: 1;
-    grid-row: 2;
+    background-color: #EEEEEE77;
+    border-color: #333333;
 }
 
 .article {
@@ -36,6 +27,18 @@
 
 .article:hover {
     background-color: #E0EFD7;
+}
+
+
+
+.nav {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.meta {
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .title {
