@@ -8,16 +8,14 @@
 
 <body>
 
-    <div class="container">
-        <div class="item meta">Meta</div>
-        <div class="item nav">Nav
-            <ul>
-                <il class="top 1">Top1</il>
-            </ul>
-        </div>
-        <div class="item article content">Text</div>
-        <div class="item article title">Title</div>
-    </div>
+    <form action="Article.php" method="post">
+        <input type="text" name="titre" value="Titre"><br>
+        <label for="thematique">Thématique :</label><input id="thematique" type="text" name="thematique"><br>
+        <label for="mot_cle">Mots clés :</label><input id="mot_cle" type="text" name="mot_cle"><br>
+        <input type="text" name="corps_arcticle" value="Corps de l'article"><br>
+        <button type="submit" name="supprimer" id="supprimer">Supprimer</button>
+        <button type="submit" name="enregistrer" id="enregistrer">Enregistrer</button>
+    </form>
 
 </body>
 </html>
