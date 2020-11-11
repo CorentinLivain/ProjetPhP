@@ -9,21 +9,29 @@
 <form action="Article.php" method="post">
 
     <div class="container">
-        <div class="item meta">Meta</div>
-        <div class="item mot_cle">
+        <div class="item meta">
+            <label for="thematique">Thématique</label>
+            <input id="thematique" type="text" name="thematique">
+        </div>
+
+        <div class="item nav">
             <label for="resume">Résumer</label>
             <input id="resume" type="text" name="resume">
         </div>
-        <div class="item nav">Nav</div>
+
         <div class="item article content">
-            <input type="text" name="corps_arcticle" value="Corps de l'article">
+            <input type="text" name="corps_arcticle">
         </div>
+
         <div class="item article title">
-            <input type="text" name="titre" value="Titre">
+            <label for="titre">Titre</label>
+            <input id="titre" type="text" name="titre">
         </div>
     </div>
 
-    <button type="submit" id="supprimer">Supprimer</button>
+    <button>
+        <a href="Accueil.html">Annuler</a>
+    </button>
     <button type="submit" id="enregistrer">Enregistrer</button>
 </form>
 </body>

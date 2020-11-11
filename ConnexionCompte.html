@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Connexion</title>
+    <link rel="stylesheet" href="../Css/styleAccueil.css">
+    <link rel="stylesheet" href="../Css/styleConnexion.css">
 </head>
 <body>
 <form method="post" action="../Php/ConnexCompte.php">
-    Login : <input type="text" name="login"><br>
-    Pass : <input type="text" name="password"><br>
-    <input type="submit" value="Se connecter"><br>
+
+    <div class="connexion">
+        <p class="titreCo">CONNEXION</p>
+
+        <input class="saisie log" type="text" value="login">
+        <input class="saisie pass" type="text" value="password">
+
+        <button class="bouton">Connexion</button>
+        <br/>
+        <a href="CreationCompte.html" class="creercompe">Créer un compte</a>
+    </div>
+
 </form>
-<form methode="post" action="CreationCompte.html">
-    <input type="submit" value="Créer un compte"><br>
 </form>
 </body>
 </html>
